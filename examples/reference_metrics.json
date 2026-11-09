@@ -1,0 +1,330 @@
+{
+  "data": "synthetic only",
+  "seed": 23,
+  "virtual_subjects": 80,
+  "windows": 800,
+  "test_virtual_subjects": 20,
+  "split_subjects": {
+    "train": [
+      0,
+      1,
+      6,
+      10,
+      13,
+      14,
+      16,
+      18,
+      19,
+      20,
+      22,
+      25,
+      28,
+      30,
+      34,
+      35,
+      37,
+      40,
+      41,
+      43,
+      45,
+      47,
+      48,
+      49,
+      51,
+      52,
+      55,
+      60,
+      62,
+      65,
+      66,
+      67,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "validation": [
+      2,
+      12,
+      15,
+      21,
+      26,
+      31,
+      32,
+      33,
+      36,
+      38,
+      39,
+      42,
+      54,
+      56,
+      57,
+      58,
+      59,
+      64,
+      69,
+      78
+    ],
+    "test": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      17,
+      23,
+      24,
+      27,
+      29,
+      44,
+      46,
+      50,
+      53,
+      61,
+      63,
+      68,
+      79
+    ]
+  },
+  "validation_gate": -0.1577369998132389,
+  "validation_coverage": 0.8,
+  "routing_threshold": -0.1951558990295537,
+  "routing_policy": "quality_threshold",
+  "test_fraction_routed_to_welch": 0.835,
+  "test_metrics": {
+    "peak": {
+      "n": 200,
+      "coverage": 1.0,
+      "mae_bpm": 2.686169236380491,
+      "p90_bpm": 2.0712907844240793
+    },
+    "welch": {
+      "n": 200,
+      "coverage": 1.0,
+      "mae_bpm": 2.846933215991992,
+      "p90_bpm": 0.30243665706564893
+    },
+    "gradient_boosting": {
+      "n": 200,
+      "coverage": 1.0,
+      "mae_bpm": 1.8875540177207417,
+      "p90_bpm": 3.1730037081325735
+    },
+    "gated_gradient_boosting": {
+      "n": 155,
+      "coverage": 0.775,
+      "mae_bpm": 0.9708719622888027,
+      "p90_bpm": 2.5234782929149957
+    },
+    "quality_routed": {
+      "n": 200,
+      "coverage": 1.0,
+      "mae_bpm": 1.1585721622425393,
+      "p90_bpm": 1.5130036794653274
+    }
+  },
+  "test_same_accepted_windows": {
+    "peak": {
+      "n": 155,
+      "coverage": 1.0,
+      "mae_bpm": 0.7336756703450115,
+      "p90_bpm": 1.497867942455539
+    },
+    "welch": {
+      "n": 155,
+      "coverage": 1.0,
+      "mae_bpm": 0.10633409784527324,
+      "p90_bpm": 0.1974379068847412
+    },
+    "gradient_boosting": {
+      "n": 155,
+      "coverage": 1.0,
+      "mae_bpm": 0.9708719622888027,
+      "p90_bpm": 2.5234782929149957
+    },
+    "gated_gradient_boosting": {
+      "n": 155,
+      "coverage": 1.0,
+      "mae_bpm": 0.9708719622888027,
+      "p90_bpm": 2.5234782929149957
+    },
+    "quality_routed": {
+      "n": 155,
+      "coverage": 1.0,
+      "mae_bpm": 0.10633409784527324,
+      "p90_bpm": 0.1974379068847412
+    }
+  },
+  "test_gradient_boosting_cluster_bootstrap_mae_ci95_bpm": [
+    1.2831993448181513,
+    2.7730171299883675
+  ],
+  "by_artifact": {
+    "clean": {
+      "peak": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.5746534350595534,
+        "p90_bpm": 1.3018012556129663
+      },
+      "welch": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.05651301103318218,
+        "p90_bpm": 0.06571505025374477
+      },
+      "gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.7321036858397465,
+        "p90_bpm": 1.6306852519184574
+      },
+      "gated_gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.7321036858397465,
+        "p90_bpm": 1.6306852519184574
+      },
+      "quality_routed": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.05651301103318218,
+        "p90_bpm": 0.06571505025374477
+      }
+    },
+    "drift": {
+      "peak": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.5779011345140981,
+        "p90_bpm": 1.2732773533318182
+      },
+      "welch": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.05596926639060591,
+        "p90_bpm": 0.06317392777157807
+      },
+      "gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.9805613950165446,
+        "p90_bpm": 2.9885297590010538
+      },
+      "gated_gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.9805613950165446,
+        "p90_bpm": 2.9885297590010538
+      },
+      "quality_routed": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.05596926639060591,
+        "p90_bpm": 0.06317392777157807
+      }
+    },
+    "motion": {
+      "peak": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 5.4085821726358665,
+        "p90_bpm": 6.3968588973575145
+      },
+      "welch": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 5.422348277388464,
+        "p90_bpm": 0.6811097400468192
+      },
+      "gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 3.372390333799823,
+        "p90_bpm": 7.240078886229388
+      },
+      "gated_gradient_boosting": {
+        "n": 29,
+        "coverage": 0.725,
+        "mae_bpm": 1.3745384431986873,
+        "p90_bpm": 2.6627702905824036
+      },
+      "quality_routed": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 2.4863222102437668,
+        "p90_bpm": 7.240078886229388
+      }
+    },
+    "dropout": {
+      "peak": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.7318442886149048,
+        "p90_bpm": 1.4286831283654906
+      },
+      "welch": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.07915143768585882,
+        "p90_bpm": 0.1793405511779163
+      },
+      "gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.8790360640135619,
+        "p90_bpm": 1.4789904508657135
+      },
+      "gated_gradient_boosting": {
+        "n": 29,
+        "coverage": 0.725,
+        "mae_bpm": 0.8401798032042093,
+        "p90_bpm": 1.4218423793907902
+      },
+      "quality_routed": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 0.1385817389350036,
+        "p90_bpm": 0.19295250875788109
+      }
+    },
+    "mixed": {
+      "peak": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 6.137865151078032,
+        "p90_bpm": 12.861134687577502
+      },
+      "welch": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 8.620684087461848,
+        "p90_bpm": 30.98935956083055
+      },
+      "gradient_boosting": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 3.4736786099340335,
+        "p90_bpm": 7.916604519946154
+      },
+      "gated_gradient_boosting": {
+        "n": 17,
+        "coverage": 0.425,
+        "mae_bpm": 1.0442189279311034,
+        "p90_bpm": 1.9598877669339776
+      },
+      "quality_routed": {
+        "n": 40,
+        "coverage": 1.0,
+        "mae_bpm": 3.055474584610138,
+        "p90_bpm": 7.916604519946154
+      }
+    }
+  }
+}
